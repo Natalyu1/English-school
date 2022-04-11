@@ -9,20 +9,30 @@ html{
 
 .image {
     background-image: url(hero.jpg);
-    height: 850px;
+    height: 100%;
     background-position: center;
     background-size: cover;
   }
+
+ 
+
   .content {
       width: 1024px;
       height: 850px;
       margin-left: auto;
       margin-right: auto;
+
+     
   }
   .cap{
    display: flex;
-   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   
   }
+
+
+
   .element{
    width: 100px;
    height: 100px;
@@ -30,15 +40,16 @@ html{
    object-position: left;
    object-position: right;
   }
+
   .logo {
   width: 100px;
-  height: 100px;
+  height: 100%;
   object-fit: cover;
   }
 
 
   .link{
-     padding-left: 50px;
+     
      margin: auto;
   }
 
@@ -48,7 +59,7 @@ html{
       font-family: 'Nunito Sans', sans-serif;
       font-size: 15px;
       opacity: 70%;
-      padding: 15px;
+     padding: 15px;
   }
 
 
@@ -62,6 +73,7 @@ html{
      flex-direction: column;
      width: 400px;
      padding-top: 60px;
+     padding-bottom: 30px;
      color: #44403C;
      font-size: 20px;
      font-family: 'Nunito Sans', sans-serif;
@@ -71,7 +83,7 @@ html{
       color:black;
       font-size: 55px;
       font-weight: 600px;
-      line-height: 48px;
+      padding-bottom: 30px;
       font-family: 'Nunito Sans', sans-serif;
      }
 
@@ -83,7 +95,7 @@ html{
 
      .button{
          display: flex;
-         justify-content: center;
+         justify-content: left;
          border: none;
      }
 
@@ -92,6 +104,7 @@ html{
        background-color: var(--primary-color-button);
        color: white;
        font-size: 20px;
+       font-family: 'Nunito Sans', sans-serif;
        margin-top: 40px;
        padding: 20px;
        border-radius: 10px;
@@ -104,8 +117,10 @@ html{
       display: flex;
       justify-content: center;
       padding-top: 45px;
+      padding-bottom: 40px;
       font-family: 'Nunito Sans', sans-serif;
-      font-size: 18px;
+      font-size: 40px;
+      font-weight: 600;
       color: black;
    }
    .container{
@@ -119,11 +134,10 @@ html{
    .advantage{
        background-color: var(--primary-section-background);
        width: 250px;
-       height: 200px;
        border-radius: 25px;
        padding: 20px;
        font-size: 15px;
-       font-family: Nunito Sans', sans-serif;
+       font-family: 'Nunito Sans', sans-serif;
    }
    .orange-icons{
        width: 45px;
@@ -141,13 +155,18 @@ html{
        height: 30px;
    }
    .speech{
+       padding-top: 20px;
        font-size: 20px;
-       font-weight: 200px;
+       font-family: 'Nunito Sans', sans-serif;
+       font-weight: 600px;
        text-align: center;
-       color: #57534e;
+       color: #1c1917;
    }
    .skills{
+       padding-top: 20px;
+       padding-bottom: 30px;
        font-size: 16px;
+       font-family: 'Nunito Sans', sans-serif;
       text-align: center;
       color: #57534e;
    }
@@ -160,19 +179,17 @@ html{
    }
    .pluses{
        padding-top: 80px;
-       width: 512px;
-      margin-left: 0%;
-      font-size: 20px;
-      font-weight: 200px;
-      font-family: Nunito Sans', sans-serif;
+       width: 50%;
+       padding-bottom: 30px;
+      
    }
    .icons-people{
        padding-top: 80px;
-       width: 512px;
+       width: 50%;
        margin-right: 0%;
    }
    .people-logo{
-       width: 512px;
+       width: 100%;
    }
    .record{
        background-color: var(--primary-background);
@@ -186,11 +203,23 @@ html{
       padding-top: 40px;
       text-align: center;
       font-size: 20px;
-      font-family: Nunito Sans', sans-serif;
+      font-family: 'Nunito Sans', sans-serif;
+   }
+
+   .subtitle1{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Nunito Sans', sans-serif;
    }
 
    .text-color{
        color:#78716c ;
+       padding-top: 15px;
+       padding-bottom: 15px;
+       font-size: 20px;
+       font-family: 'Nunito Sans', sans-serif;
    }
  
    .recording_input{
@@ -211,6 +240,7 @@ html{
        padding: 15px;
        text-align: left;
        font-size: 15px;
+       font-family: 'Nunito Sans', sans-serif;
        border-radius: 10px;
        margin-right: 20px;
        border-color: #d6d3d1;
@@ -227,6 +257,7 @@ html{
   background-color: var(--primary-color-button);
   color: white;
   font-size: 20px;
+  font-family: 'Nunito Sans', sans-serif;
   border-radius: 10px;
   border: none;
 }
@@ -247,7 +278,7 @@ html{
        text-align: center;
        font-weight: 400px;
        font-size: 25px;
-       font-family: Nunito Sans', sans-serif;
+       font-family: 'Nunito Sans', sans-serif;
    }
 
    .reviews2{
@@ -256,13 +287,19 @@ html{
        margin-right: auto;
        text-align: left;
        font-size: 18px;
-       font-family: Nunito Sans', sans-serif;
+       font-family: 'Nunito Sans', sans-serif;
    }
+
+   .last{
+    padding-top: 25px;
+}
 
    .underline{
      border-bottom: #78716c solid 1px;
+     padding-top: 10px;
      padding-bottom: 20px;
      color: #78716c;
+     font-family: 'Nunito Sans', sans-serif;
    }
 
    .subscription{
@@ -274,7 +311,7 @@ html{
        padding-bottom: 60px;
        margin-left: auto;
        margin-right: auto;
-       font-family: Nunito Sans', sans-serif;
+       font-family: 'Nunito Sans', sans-serif;
        
    }
 
@@ -295,25 +332,32 @@ html{
        padding: 15px;
        margin-left: auto;
        margin-right: auto;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
        
       
    }
 
    .months{
-       font-size: 20px;
+       padding: 10px 0;
+       font-size: 15px;
        color: var(--primary-color-button);
        text-align: left;
       
    }
 
    .cost{
-       font-size: 25px;
+       
+       font-size: 20px;
        font-weight: 600px;
        color: black;
        text-align: left;
    }
 
-
+.quantity{
+    padding: 15px 0;
+}
 
    .button3{
     display: flex;
@@ -345,6 +389,7 @@ html{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 5px 0;
     
 }
 
@@ -352,8 +397,8 @@ html{
     padding-top: 5px;
     padding-left: 15px;
     color: #78716c;
-    font-size: 15px;
-    line-height: 2px;
+    font-size: 13px;
+    
 }
 
 .social-links{
@@ -367,15 +412,12 @@ html{
     width: 1024px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .telephone1{
-    
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
+   margin: 50px auto;
+   display: flex;
     align-items: center;
     
 }
@@ -388,12 +430,8 @@ html{
 }
 
 .social-network{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
+  margin: 50px auto;
+   
     
 }
 
@@ -404,11 +442,9 @@ html{
 }
 
 .mail{
+   
     color:#44403c ;
     font-size: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 50px auto;
     
 }
