@@ -17,7 +17,7 @@ html{
  
 
   .content {
-      width: 1024px;
+      max-width: 1024px;
       height: 850px;
       margin-left: auto;
       margin-right: auto;
@@ -28,9 +28,18 @@ html{
    display: flex;
    align-items: center;
    justify-content: space-between;
+   flex-wrap: wrap;
    
   }
 
+  @media (max-width: 390px){
+      .cap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+  }
+    
 
 
   .element{
@@ -49,7 +58,6 @@ html{
 
 
   .link{
-     
      margin: auto;
   }
 
@@ -60,6 +68,7 @@ html{
       font-size: 15px;
       opacity: 70%;
      padding: 15px;
+     text-decoration: none;
   }
 
 
@@ -69,34 +78,57 @@ html{
   }
 
   .header{
+     max-width: 400px;
      display: flex;
      flex-direction: column;
-     width: 400px;
      padding-top: 60px;
      padding-bottom: 30px;
-     color: #44403C;
-     font-size: 20px;
-     font-family: 'Nunito Sans', sans-serif;
+     position: left;
+    
   }
 
-  #text{
+
+  .text{
       color:black;
-      font-size: 55px;
-      font-weight: 600px;
+      font-size: 45px;
+      text-align: left;
       padding-bottom: 30px;
       font-family: 'Nunito Sans', sans-serif;
      }
+
+     @media (max-width: 390px){
+       .text{
+           font-size: 30px;
+           
+       }
+     }
+
+    .text-2{
+    font-size: 20px;
+    color: #44403C;
+    text-align: left;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+@media (max-width: 390px){
+    .text-2{
+        font-size: 15px;
+        
+    }
+  }
 
      .telephone1{
          color:#44403c ;
          font-size: 20px;
          padding-left: 20px;
+         text-align: left;
      }
 
      .button{
          display: flex;
          justify-content: left;
          border: none;
+         margin-top: 50px;
      }
 
 
@@ -105,7 +137,6 @@ html{
        color: white;
        font-size: 20px;
        font-family: 'Nunito Sans', sans-serif;
-       margin-top: 40px;
        padding: 20px;
        border-radius: 10px;
        border: none;
@@ -124,16 +155,26 @@ html{
       color: black;
    }
    .container{
-      width: 1024px;
+      max-width: 1024px;
       margin-left: auto;
       margin-right: auto;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
    }
+
+   @media (max-width: 390px){
+       .container{
+           display: flex;
+           flex-direction: column;
+           margin: 0 auto;
+       }
+     
+   }
+
    .advantage{
        background-color: var(--primary-section-background);
-       width: 250px;
+       margin: 15px;
        border-radius: 25px;
        padding: 20px;
        font-size: 15px;
@@ -170,24 +211,49 @@ html{
       text-align: center;
       color: #57534e;
    }
+
+
    .confidence{
-    width: 1024px;
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: row;
    }
+
+   @media (max-width: 390px){
+       .confidence{
+           display: flex;
+           flex-direction: column;
+           margin: 5px 0;
+       }
+      
+   }
+
    .pluses{
        padding-top: 80px;
+       padding-bottom:30px;
        width: 50%;
-       padding-bottom: 30px;
       
+   }
+
+   @media (max-width: 390px){
+       .pluses{
+           width: 100%;
+           padding: 10px;
+       }
    }
    .icons-people{
        padding-top: 80px;
        width: 50%;
-       margin-right: 0%;
-   }
+    }
+       @media (max-width: 390px){
+           .icons-people{
+               width: 100%;
+               padding: 5px 0;
+           }
+       }
+   
    .people-logo{
        width: 100%;
    }
@@ -196,34 +262,45 @@ html{
        
    }
    .lesson{
-     
-      width: 1024px;
+      max-width: 1024px;
       margin-left: auto;
       margin-right: auto;
       padding-top: 40px;
-      text-align: center;
-      font-size: 20px;
-      font-family: 'Nunito Sans', sans-serif;
+      
    }
 
    .subtitle1{
     font-size: 30px;
     font-weight: 600;
     padding-top: 30px;
+    text-align: center;
     padding-bottom: 30px;
     font-family: 'Nunito Sans', sans-serif;
+   }
+
+   @media (max-width: 390px) {
+       .subtitle1{
+           text-align: center;
+           font-size: 20px;
+       }
+       .text-color{
+           padding: 5px 0;
+           
+       }
+     
    }
 
    .text-color{
        color:#78716c ;
        padding-top: 15px;
        padding-bottom: 15px;
-       font-size: 20px;
+       font-size: 17px;
+       text-align: left;
        font-family: 'Nunito Sans', sans-serif;
    }
  
    .recording_input{
-       width: 1024px;
+       max-width: 1024px;
        margin-left: auto;
        margin-right: auto;
        display: flex;
@@ -232,8 +309,20 @@ html{
        padding-top: 50px;
        padding-bottom: 40px;
        border: none;
-       
-      
+   }
+
+   @media (max-width: 390px){
+       .recording_input{
+           display: flex;
+           flex-direction: column;
+         align-items: center;
+         padding: 10px 0;
+        
+       }
+     #name{
+         margin: 5px 0;
+     }
+    
    }
 
    #name{
@@ -272,7 +361,7 @@ html{
     
 }
    .reviews{
-       width: 1024px;
+       max-width: 1024px;
        margin-left: auto;
        margin-right: auto;
        text-align: center;
@@ -281,14 +370,20 @@ html{
        font-family: 'Nunito Sans', sans-serif;
    }
 
+  
    .reviews2{
-       width: 700px;
+      padding: 0 200px;
        margin-left: auto;
        margin-right: auto;
        text-align: left;
        font-size: 18px;
        font-family: 'Nunito Sans', sans-serif;
    }
+   @media (max-width: 390px){
+    .reviews2{
+     padding: 0 15px;
+    }
+}
 
    .last{
     padding-top: 25px;
@@ -303,7 +398,7 @@ html{
    }
 
    .subscription{
-       width: 1024px;
+       max-width: 1024px;
        text-align: center;
        font-size: 25px;
        font-weight: 400px;
@@ -315,29 +410,58 @@ html{
        
    }
 
+   @media (max-width: 390px){
+    .subscription{
+  
+        
+    }
+}
+
+   .text-color_2{
+    color:#78716c ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+   }
+
    .conditions{
        display: flex;
        flex-direction: row;
       justify-content: center;
-     
-     
       
    }
 
-  
+   @media (max-width: 390px){
+       .conditions{
+           display: flex;
+           flex-direction: column;
+           
+           
+       }
+   }
+
    .conditions_one{
-       width: 250px;
+       width: calc(100% / 3 - 30px);
+       margin: 15px;
        border:#d6d3d1 solid 2px;
        border-radius: 15px;
        padding: 15px;
-       margin-left: auto;
-       margin-right: auto;
        display: flex;
        flex-direction: column;
        justify-content: space-between;
+       box-sizing: border-box;
        
-      
    }
+
+   @media (max-width: 390px){
+       .conditions_one{
+           width: calc(100% / 1 - 30px);
+           margin: 15px;
+       }
+   }
+
 
    .months{
        padding: 10px 0;
@@ -405,32 +529,43 @@ html{
   background-color: #d6d3d1;
 }
 
+
 .social-links__item{
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    width: 1024px;
+    max-width: 1024px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+@media (max-width: 390px){
+    .social-links__item{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 
 .telephone1{
-   margin: 50px auto;
+  
    display: flex;
     align-items: center;
     
 }
-   
+
     
 .telephone2{
     color:#44403c ;
     font-size: 20px;
-    padding-left: 20px;
+   padding-left: 15px;
 }
 
 .social-network{
-  margin: 50px auto;
+
    
     
 }
@@ -442,9 +577,7 @@ html{
 }
 
 .mail{
-   
     color:#44403c ;
     font-size: 20px;
-    margin: 50px auto;
     
 }
