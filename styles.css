@@ -32,7 +32,7 @@ html{
    
   }
 
-  @media (max-width: 390px){
+  @media (max-width: 600px){
       .cap{
         display: flex;
         flex-wrap: wrap;
@@ -96,7 +96,7 @@ html{
       font-family: 'Nunito Sans', sans-serif;
      }
 
-     @media (max-width: 390px){
+     @media (max-width: 600px){
        .text{
            font-size: 30px;
            
@@ -110,7 +110,7 @@ html{
     font-family: 'Nunito Sans', sans-serif;
 }
 
-@media (max-width: 390px){
+@media (max-width: 600px){
     .text-2{
         font-size: 15px;
         
@@ -163,7 +163,7 @@ html{
       justify-content: space-between;
    }
 
-   @media (max-width: 390px){
+   @media (max-width: 600px){
        .container{
            display: flex;
            flex-direction: column;
@@ -221,7 +221,7 @@ html{
     flex-direction: row;
    }
 
-   @media (max-width: 390px){
+   @media (max-width: 600px){
        .confidence{
            display: flex;
            flex-direction: column;
@@ -234,10 +234,11 @@ html{
        padding-top: 80px;
        padding-bottom:30px;
        width: 50%;
+       box-sizing: border-box;
       
    }
 
-   @media (max-width: 390px){
+   @media (max-width: 600px){
        .pluses{
            width: 100%;
            padding: 10px;
@@ -247,7 +248,7 @@ html{
        padding-top: 80px;
        width: 50%;
     }
-       @media (max-width: 390px){
+       @media (max-width: 600px){
            .icons-people{
                width: 100%;
                padding: 5px 0;
@@ -278,7 +279,7 @@ html{
     font-family: 'Nunito Sans', sans-serif;
    }
 
-   @media (max-width: 390px) {
+   @media (max-width: 600px) {
        .subtitle1{
            text-align: center;
            font-size: 20px;
@@ -311,7 +312,7 @@ html{
        border: none;
    }
 
-   @media (max-width: 390px){
+   @media (max-width: 600px){
        .recording_input{
            display: flex;
            flex-direction: column;
@@ -339,6 +340,7 @@ html{
    .button2{
     display: flex;
     justify-content: center;
+    
     border: none;
 }
 
@@ -353,6 +355,15 @@ html{
 
 .orange-button2:hover {
     background-color: #EA580C;
+}
+
+@media (max-width: 600px){
+    .button2{
+     padding-top: 10px;
+    }
+    .orange-button2{
+      padding: 15px 5px;
+    }
 }
 
 .background{
@@ -379,7 +390,9 @@ html{
        font-size: 18px;
        font-family: 'Nunito Sans', sans-serif;
    }
-   @media (max-width: 390px){
+
+
+   @media (max-width: 600px){
     .reviews2{
      padding: 0 15px;
     }
@@ -410,7 +423,7 @@ html{
        
    }
 
-   @media (max-width: 390px){
+   @media (max-width: 600px){
     .subscription{
   
         
@@ -433,7 +446,7 @@ html{
       
    }
 
-   @media (max-width: 390px){
+   @media (max-width: 600px){
        .conditions{
            display: flex;
            flex-direction: column;
@@ -455,7 +468,7 @@ html{
        
    }
 
-   @media (max-width: 390px){
+   @media (max-width: 600px){
        .conditions_one{
            width: calc(100% / 1 - 30px);
            margin: 15px;
@@ -542,7 +555,7 @@ html{
     padding: 40px 0;
 }
 
-@media (max-width: 390px){
+@media (max-width: 600px){
     .social-links__item{
         display: flex;
         flex-direction: column;
@@ -551,9 +564,8 @@ html{
 }
 
 .telephone1{
-  
    display: flex;
-    align-items: center;
+   align-items: center;
     
 }
 
@@ -564,11 +576,6 @@ html{
    padding-left: 15px;
 }
 
-.social-network{
-
-   
-    
-}
 
 .networks{
     width: 30px;
